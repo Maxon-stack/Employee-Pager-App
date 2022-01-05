@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #005fff;
+  --primary-color: black;
   --primary-color-alpha: #005fff1a;
 }
 
@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 #root {
@@ -27,7 +28,7 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  background: #005fff;
+  background: var(--primary-color);
 }
 
 .auth__form-container_image {
@@ -101,8 +102,8 @@ body {
 
 .auth__form-container_fields-content_input input:focus,
 .auth__form-container_fields-content_input input:active {
-  box-shadow: 0px 0px 0px 1.5px #005fff;
-  border-color: #005fff;
+  box-shadow: 0px 0px 0px 1.5px var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .auth__form-container_fields-content_input-password {
@@ -120,8 +121,8 @@ body {
 
 .auth__form-container_fields-content_button button {
   border-radius: 4px;
-  background: #005fff;
-  border: 1px solid #005fff;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -1712,7 +1713,7 @@ div.rta__autocomplete.str-chat__emojisearch {
   display: none;
   height: 50px;
   width: 50px;
-  background: #005fff;
+  background: #646363;
   position: absolute;
   right: -2%;
   top: 50%;
@@ -1725,7 +1726,7 @@ div.rta__autocomplete.str-chat__emojisearch {
   height: 100%;
   box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
-  width: 90%;
+  width: 100%;
   top: 0%;
   z-index: 5;
   transition: 0.8s ease;
